@@ -2,22 +2,25 @@ import bcryptjs from "bcryptjs";
 
 const userData = [
   {
-    name: "Aditi",
+    fullname: "Aditi",
     email: "aditi@example.com",
     password: bcryptjs.hashSync("123456", 10),
-    isAdmin: true,
+    phoneNumber: '123456789',
+    role: 'recruiter',
   },
   {
-    name: "Kirtish",
+    fullname: "Kirtish",
     email: "kirtish@example.com",
     password: bcryptjs.hashSync("123456", 10),
-    isAdmin: true,
+    phoneNumber: '222222222',
+    role: 'recruiter',
   },
   {
-    name: "John Doe",
+    fullname: "John Doe",
     email: "john@example.com",
     password: bcryptjs.hashSync("123456", 10),
-    isAdmin: false,
+    phoneNumber: '333333333',
+    role: 'student',
   },
 ];
 

@@ -37,6 +37,7 @@ const userSchema = new mongoose.Schema(
       enum: ["student", "recruiter"],
       required: true,
     },
+    
     profile: profileSchema,
   },
 
